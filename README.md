@@ -16,8 +16,8 @@ Lancer le script qui téléchargera les photos et les placera sous le répertoir
 
 ```
 Processing: html\20190413.html
-Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/photos/20190413_0001.jpg
-Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/photos/20190413_0002.jpg
-Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/photos/20190413_0003.pg
-Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/photos/20190413_0004.pg
+Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/20190413_0001.jpg
+Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/20190413_0002.jpg
+Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/20190413_0003.jpg
+Saving:     http://ondonnedesnouvelles.com/uploads/n1/121195/photos_web/abcdefghij.xxxx_yy.jpg as photos/20190413_0004.jpg
 ```
