@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from lxml import etree, html
 import requests
 import os
@@ -16,11 +18,19 @@ for html in html_files:
     tree = etree.parse(html, parser)
     photo_block_items = tree.xpath("""/html/body/div[3]/div/div[2]/div/a""")
 
+    sequence = 1
     for pbi in photo_block_items:
         url = "http://ondonnedesnouvelles.com/" + pbi.attrib['href']
-        basename = os.path.basename(url)
+
+        # Get the basename of the HTML file, aka the date with format YYYYMMDD
         yyyymmdd = os.path.splitext(os.path.basename(html))[0]
-        filename = "photos/" + yyyymmdd + "-" + basename
+
+        # Construct the photo file name keeping the original extension
+        filename = "photos/" + yyyymmdd + "_" + str(sequence).zfill(4) + os.path.splitext(os.path.basename(url))[1]
+
         print("Saving:     " + url + " as " + filename)
         photo = requests.get(url)
-        open(filename, 'wb').write(photo.content)
+        with open(filename, 'wb') as handler:
+            handler.write(photo.content)
+
+        sequence += 1
