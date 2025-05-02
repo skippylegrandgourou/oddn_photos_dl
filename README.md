@@ -1,11 +1,11 @@
-#ODDN Photos Downloader
+# ODDN Photos Downloader
 
-##Description
+## Description
 Script Python permettant de télécharger les photos référencées dans le code HTML des pages photos de chaque billet journalier du site __ondonnedesnouvelles.com__ 
 
-##Utilisation
+## Utilisation
 
-Sauvegarder le code source de chaque page photo dans un fichier nommé YYYYDDMM sous le répertoire ````html/```. Par exemple:
+Sauvegarder le code source de chaque page photo dans un fichier nommé YYYYDDMM sous le répertoire ``html/`. Par exemple:
 
 ```
 20190408.html
